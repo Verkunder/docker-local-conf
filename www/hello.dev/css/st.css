@@ -1,0 +1,110 @@
+body
+{
+  background: #FFCCFF;;
+}
+.safe
+{border: 2px solid black;
+}
+#one {
+top:0px;
+left:0px;
+width:1260px;
+height:240px;
+position:absolute;
+  Font-family:"Comic Sans MS";
+}
+
+#two {
+top:0px;
+left:1260px;
+width:640px;
+height:240px;
+position:absolute;
+}
+
+#three {
+top:240px;
+left:0px;
+width:630px;
+height:240px;
+position:absolute;
+}
+
+#four {
+top:240px;
+left:630px;
+width:630px;
+height:240px;
+position:absolute;
+  Font-family:"Comic Sans MS";
+}
+
+#five {
+top:240px;
+left:1260px;
+width:640px;
+height:240px;
+position:absolute;
+}
+
+#six {
+top:480px;
+left:0px;
+width:1260px;
+height:240px;
+position:absolute;
+}
+
+#seven {
+top:480px;
+left:1260px;
+width:320px;
+height:240px;
+position:absolute;
+  Font-family:"Comic Sans MS";
+}
+
+#eight {
+top:480px;
+left:1580px;
+width:320px;
+height:240px;
+position:absolute;
+  Font-family:"Comic Sans MS";
+}
+
+#nine {
+top:720px;
+left:0px;
+width:420px;
+height:240px;
+position:absolute;
+  Font-family:"Comic Sans MS";
+}
+
+#ten {
+top:720px;
+left:420px;
+width:420px;
+height:240px;
+position:absolute;
+  Font-family:"Comic Sans MS";
+}
+
+#eleven {
+top:720px;
+left:840px;
+width:420px;
+height:240px;
+position:absolute;
+}
+
+#twelve {
+top:720px;
+left:1260px;
+width:640px;
+height:240px;
+position:absolute;
+  Font-family:"Comic Sans MS";
+}
+</body>

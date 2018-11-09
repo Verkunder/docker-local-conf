@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta http-equiv="Content-Type content="text/html; charset=utf-8">
+<title> Tattoos and sketches </title>
+<link rel="stylesheet" href="css/st.css">
+</head>
+<body>
+<div class="safe"id="one"><p align="center"><big>Татуировки и эскизы</big></p> </div>
+<div class="safe"id="two"><img src="../Логотип.png" height="240" width="250"/>
+</div>
+<div class="safe"id="three">
+  <iframe width="200" height="200" name="ssilka"></iframe>
+</div>
+<div class="safe"id="four">
+  <a href="Вывод по ссылке.html" target="ssilka"> Цены тату </a>
+  <a href="Дорого.png" target="ssilka"> Работа за 14 000 рублей </a>
+</div>
+<div class="safe"id="five">
+  <iframe width="200" height="200" name="stili"></iframe>
+  <iframe width="200" height="200" name="zathem"></iframe>
+  <iframe width="200" height="200" name="razni"></iframe></div>
+<div class="safe"id="six">
+  <iframe width="250" height="240" name="tats"></iframe>
+</div>
+<div class="safe"id="seven">
+  <p><b>Выберите тип татуировки</b></p>
+  <p><input name="Tat" type="radio" value="tsvet" onclick=tsvets()> Цветные </p>
+  <p><input name="Tat" type="radio" value="gh" onclick=ghtat()> Черно-белые </p>
+  <p><input name="Tat" type="radio" value="kont" onclick=kontur()> Контурные </p><
+</div>
+<div class="safe"id="eight">
+  <p><b>Выберите информацию</b></p>
+  <p><input type="checkbox" name="q" value="vid" onclick=vidi()> Стили тату</p>
+  <p><input type="checkbox" name="z" value="zah" onclick=zahem()> Зачем это делается</p>
+  <p><input type="checkbox" name="h" value="raz" onclick=raznitsa()> Разница между начинающим мастером и со стажем </p>
+</div>
+<div class="safe"id="nine">
+  Мастера
+  <ul>
+    <li>Новацкий Павел
+    <li>Дмитрий Лермонтов
+    <li>Роман
+  </ul>
+</div>
+<div class="safe"id="ten">
+  Виды татуировок
+  <ol>
+    <li>Цветные
+    <li>Черно-белые
+    <li>Контурные
+  </ol>
+</div>
+<div class="safe"id="eleven">
+  <iframe width="600" height="600" name="izobraz"></iframe>
+</div>
+<div class="safe"id="twelve">
+  <a href="#" onclick=izobrazenie()> Просмотр работы </a>
+</div>
+</body>
+<script language=javascript>
+  function tsvets()
+  {tats.location.href="tsig.png"}
+  function ghtat()
+  {tats.location.href="rog.png"}
+  function kontur()
+  {tats.location.href="kontr.png"}
+  function vidi()
+  {stili.location.href="Стили.html"}
+  function zahem()
+  {zathem.location.href="Зачем.html"}
+  function  raznitsa()
+  {razni.location.href="Разница.html"}
+
+  function izobrazenie()
+  {if (window.confirm('Загрузить большое изображение?')==true)
+  {izobraz.location.href="Большая картинка.html"} else {izobraz.location.href="Маленькая картинка.html"}
+  }
+
+</script>
