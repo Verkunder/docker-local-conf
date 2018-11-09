@@ -5,15 +5,15 @@
 <link rel="stylesheet" href="css/st.css">
 </head>
 <body>
-<div class="safe"id="one"><p align="center"><big>Татуировки и эскизы</big></p> </div>
+<div class="safe"id="one"><p align="center"><big>Tattoos and sketches</big></p> </div>
 <div class="safe"id="two"><img src="images/Logotip.png" height="240" width="440"/>
 </div>
 <div class="safe"id="three">
   <iframe width="630" height="240" name="ssilka"></iframe>
 </div>
 <div class="safe"id="four">
-  <a href="Vivod%20po%20ssilke.html" target="ssilka"> Цены тату </a>
-  <a href="images/Dorogo.png" target="ssilka"> Работа за 14 000 рублей </a>
+  <a href="Vivod%20po%20ssilke.html" target="ssilka"> Tattoo prices </a>
+  <a href="images/Dorogo.png" target="ssilka"> Work for 14 000 rubles </a>
 </div>
 <div class="safe"id="five">
   <iframe width="200" height="200" name="stili"></iframe>
@@ -23,38 +23,39 @@
   <iframe width="1260" height="240" name="tats"></iframe>
 </div>
 <div class="safe"id="seven">
-  <p><b>Выберите тип татуировки</b></p>
-  <p><input name="Tat" type="radio" value="tsvet" onclick=tsvets()> Цветные </p>
-  <p><input name="Tat" type="radio" value="gh" onclick=ghtat()> Черно-белые </p>
-  <p><input name="Tat" type="radio" value="kont" onclick=kontur()> Контурные </p><
+  <p><b>Choose a tattoo type</b></p>
+  <p><input name="Tat" type="radio" value="tsvet" onclick=tsvets()> Colored </p>
+  <p><input name="Tat" type="radio" value="gh" onclick=ghtat()> Black and white </p>
+  <p><input name="Tat" type="radio" value="kont" onclick=kontur()> Contour </p><
 </div>
 <div class="safe"id="eight">
-  <p><b>Выберите информацию</b></p>
-  <p><input type="checkbox" name="q" value="vid" onclick=vidi()> Стили тату</p>
-  <p><input type="checkbox" name="z" value="zah" onclick=zahem()> Зачем это делается</p>
-  <p><input type="checkbox" name="h" value="raz" onclick=raznitsa()> Разница между начинающим мастером и со стажем </p>
+  <p><b>Select information</b></p>
+  <p><input type="checkbox" name="q" value="vid" onclick=vidi()> Tattoo styles</p>
+  <p><input type="checkbox" name="z" value="zah" onclick=zahem()>Why is this done?</p>
+  <p><input type="checkbox" name="h" value="raz" onclick=raznitsa()> The difference between beginner and master with experience </p>
 </div>
 <div class="safe"id="nine">
-  Мастера
+    Masters
   <ul>
-    <li>Новацкий Павел
-    <li>Дмитрий Лермонтов
-    <li>Роман
+    <li>
+        Novatsky Pavel
+    <li>Dmitry Lermontov
+    <li>Roman
   </ul>
 </div>
 <div class="safe"id="ten">
-  Виды татуировок
+    Types of tattoos
   <ol>
-    <li>Цветные
-    <li>Черно-белые
-    <li>Контурные
+    <li>Colored
+    <li>Black and white
+    <li>Contour
   </ol>
 </div>
 <div class="safe"id="eleven">
   <iframe width="420" height="240" name="izobraz"></iframe>
 </div>
 <div class="safe"id="twelve">
-  <a href="#" onclick=izobrazenie()> Просмотр работы </a>
+  <a href="#" onclick=izobrazenie()> View job </a>
 </div>
 </body>
 <script language=javascript>
@@ -72,7 +73,7 @@
   {razni.location.href="Raznitsa.html"}
 
   function izobrazenie()
-  {if (window.confirm('Загрузить большое изображение?')==true)
+  {if (window.confirm('Upload a large image?')==true)
   {izobraz.location.href="Bolsiy.html"} else {izobraz.location.href="Malenkay.html"}
   }
 
