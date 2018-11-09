@@ -1,35 +1,37 @@
 version: '2'
 services:
-    nginx:
-        image: nginx:latest
-        ports:
-            - "80:80"
-            - "443:443"
-        volumes:
-            - ./hosts:/etc/nginx/conf.d
-            - ./www:/var/www
-            - ./logs:/var/log/nginx
-        links:
-            - php
-    php:
-        build: ./images/php
-        links:
-            - mysql
-        volumes:
-            - ./www:/var/www
-    mysql:
-        image: mysql:8
-        ports:
-            - "3306:3306"
-        volumes:
-            - ./mysql:/var/lib/mysql
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./hosts:/etc/nginx/conf.d
+      - ./www:/var/www
+      - ./logs:/var/log/nginx
+    links:
+      - php
+  php:
+    build: ./images/php
+    links:
+      - db
+    volumes:
+      - ./www:/var/www
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: my_db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 12345
+    volumes:
+      - ./mysql:/var/lib/mysql
 
-    phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        container_name: phpmyadmin
-        depends_on:
-            - mysql
-        ports:
-            - "8081:80"
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
 
 
