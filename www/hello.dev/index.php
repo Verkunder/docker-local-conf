@@ -1,1 +1,17 @@
-<?php phpinfo();
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Учебник</title>
+    <frameset rows="10%,*">
+        <frame name="headder" src="headder.html">
+        <frameset cols="20%,*">
+            <frame name="sidebar" src="sidebar.html">
+            <frame name="content" src="Учебник.html">
+        </frameset>
+    </frameset>
+</head>
+<body>
+
+</body>
+</html>
