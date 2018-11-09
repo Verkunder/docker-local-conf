@@ -7,7 +7,7 @@
         <frame name="headder" src="my.html">
         <frameset cols="20%,*">
             <frame name="sidebar" src="sidebar.html">
-            <frame name="content" src="Учебник.html">
+            <frame name="content" src="Ychebnick.html">
         </frameset>
     </frameset>
 </head>
