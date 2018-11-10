@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Учебник</title>
     <frameset rows="10%,*">
-        <frame name="headder" src="my.html">
+        <frame name="headder" src="headder.html">
         <frameset cols="20%,*">
             <frame name="sidebar" src="sidebar.html">
             <frame name="content" src="Ychebnick.html">
