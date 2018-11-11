@@ -94,17 +94,18 @@ $result = mysqli_query($dbc, "SELECT * FROM test");
 while ($row = mysqli_fetch_assoc($result)) { 
 	echo '  
     <form name="dca" action="changequestions.php" method="post">
-    <div name="set_quest">
+    <div name="set_Questions">
     <b><i>'.$row['Questions'].'</i></b>
     <ul>
-		 <li><input id="che" type="text" value="'.$row['Questions'].'"  name="st'.$row['Questions'].'"  " />
-    <li><input id="che" type="text" value="'.$row['answer1'].'"  name="st'.$row['id'].'"  " />  </li> 
-    <li><input id="che" type="text"  value="'.$row['answer2'].'" name="st'.$row['id'].'"    </li> 
+    <li><input id="che" type="text" value="'.$row['id'].'"  name="st'.$row['id'].'"   />
+    <li><input id="che" type="text" value="'.$row['Questions'].'"  name="st'.$row['Questions'].'"   /> </li>
+    <li><input id="che" type="text" value="'.$row['answer1'].'"  name="st'.$row['id'].'"   />  </li> 
+    <li><input id="che" type="text"  value="'.$row['answer2'].'" name="st'.$row['id'].'"    /></li> 
     <li><input id="che" type="text"   value="'.$row['answer3'].'" name="st'.$row['id'].'"  />  </li> 
     <li><input id="che" type="text"   value="'.$row['answer4'].'" name="st'.$row['id'].'"  /></li> 
 	<li><input id="che" type="text"   value="'.$row['correctanswer'].'" name="st'.$row['id'].'"  /> answer number  </li> 
        <a href="delete.php?id='.$row['id'].'" onclick="return confirmDelete();">Delete</a>
-	     <a href="changequestions.php?id='.$row['id'].'" ">Change</a>
+	     <a href="changequestions.php?id='.$row['id'].'" >Change</a>
         </div>
 		</form>
         ';

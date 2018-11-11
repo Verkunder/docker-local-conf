@@ -6,17 +6,17 @@ $_SESSION['admin'];
 
 if($_POST['submit']){ 
 $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die('Error connecting to MySQL server.'); 
-$idd=$_POST['idd'];
-$quest= $_POST['q']; 
-$first_answer=$_POST['1q'];
+$id=$_POST['id'];
+$Questions= $_POST['q'];
+$answer1=$_POST['1q'];
 	
-$second_answer=$_POST['2q'];
+$answer2=$_POST['2q'];
 	
-$third_answer=$_POST['3q'];	
-$four_answer=$_POST['4q'];
-$answer=$_POST['a'];
-echo"$idd" ;
-mysqli_query($dbc, "UPDATE test SET Questions='$Questions',answer1='$answer1',answer2='$answer2', answer3='$answer3', answer4='$answer4', correctanswer='$correctanswer' WHERE id='$idd'");
+$answer3=$_POST['3q'];
+$answer4=$_POST['4q'];
+$correctanswer=$_POST['a'];
+echo"$id" ;
+mysqli_query($dbc, "UPDATE test SET Questions='$Questions',answer1='$answer1',answer2='$answer2', answer3='$answer3', answer4='$answer4', correctanswer='$correctanswer' WHERE id='$id'");
  
 }
 mysqli_close($dbc);

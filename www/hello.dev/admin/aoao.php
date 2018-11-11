@@ -11,7 +11,7 @@
    <form action='addq.php' method='post'>  
 <input type='text' name='idd' /> <br/>
 <input type='text' name='q'  /> question<br/>
-<input type='text' name='1q'  /> 1 answer<br/>
+<input type='text' name='1q'  /> 1answer<br/>
 <input type='text' name='2q'  />2answer<br/>
 <input type='text' name='3q'  />3answer<br/>
 <input type='text' name='4q'  />4answer<br/>
